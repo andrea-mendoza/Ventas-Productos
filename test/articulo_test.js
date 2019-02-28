@@ -13,7 +13,7 @@ describe('Articulo test', function() {
     });
 
     it('La tarifa de ningun articulo Modem es igual a 0',function(){
-        expect(thisArticle.calcularTarifa(0)).equal();
+        expect(thisArticle.calcularTarifa(0)).equal(0);
     });
 
     it('La tarifa de 3 articulos Modem es igual a 780',function(){
