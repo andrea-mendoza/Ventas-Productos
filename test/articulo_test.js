@@ -7,12 +7,12 @@ import Articulo from '../articulo.js';
 describe('Articulo test', function() {
 
     it('La tarifa de ningun articulo es igual a 0',function(){
-        let thisArticle = new Articulo (0,30,250);
-        expect(thisArticle.calcularTarifa()).equal(0);
+        let articulo = new Articulo (0,30,250);
+        expect(articulo.calcularTarifa()).equal(0);
     });
 
     it('La tarifa de 3 articulos es igual a 780',function(){
-        let thisArticle = new Articulo (3,30,250);
-        expect(thisArticle.calcularTarifa()).equal(780);
+        let articulo = new Articulo (3,30,250);
+        expect(articulo.calcularTarifa()).equal(780);
     });
 });

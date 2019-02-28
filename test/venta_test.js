@@ -15,16 +15,16 @@ describe('Tests Venta', function() {
     });
 
     it('Cuando la venta tiene dos servicios el total de la compra debe ser 26',function(){
-        let thisService = new Servicio(2, 13);
-        venta.agregarProducto(thisService);
+        let servicio = new Servicio(2, 13);
+        venta.agregarProducto(servicio);
         expect(venta.total()).equal(26);
     });
 
     it('Cuando la venta tiene dos servicios y tres articulos, el total de la compra debe ser 858',function(){
-        let thisService = new Servicio(2, 13);
-        let thisArticle = new Articulo (3,30,250);
-        venta.agregarProducto(thisArticle);
-        venta.agregarProducto(thisService);
+        let servicio = new Servicio(2, 13);
+        let articulo = new Articulo (3,30,250);
+        venta.agregarProducto(articulo);
+        venta.agregarProducto(servicio);
         expect(venta.total()).equal(858);
     });
 });
