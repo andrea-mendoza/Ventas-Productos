@@ -6,14 +6,14 @@ import Servicio from '../servicio.js';
 
 describe('Servicio test', function() {
 
-    let thisService = new Servicio("VPN", 13);
-
-    it('Si no se requiere ningun servicio de VPN la tarifa debe ser 0',function(){
-        expect(thisService.calcularTarifa(0)).equal(0);
+    it('Si no se requiere ningun servicio la tarifa debe ser 0',function(){
+        let thisService = new Servicio(0, 13);
+        expect(thisService.calcularTarifa()).equal(0);
     });
 
-    it('Si se quiere 2 servicios de VPN la tarifa debe ser 26',function(){
-        expect(thisService.calcularTarifa(2)).equal(26);
+    it('Si se quiere 2 servicios de valor 13, la tarifa debe ser 26',function(){
+        let thisService = new Servicio(2, 13);
+        expect(thisService.calcularTarifa()).equal(26);
     });
 
 

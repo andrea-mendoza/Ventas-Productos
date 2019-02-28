@@ -1,14 +1,14 @@
 import Producto from '../Poliformismo/producto.js';
 
 class Servicio extends Producto{
-    constructor (nombre, precio){
+    constructor (cantidad, precio){
         super();
-        this.nombre = nombre;
+        this.cantidad = cantidad;
         this.precio = precio;
     }
 
-    calcularTarifa(cant){
-        return cant*this.precio;
+    calcularTarifa(){
+        return this.cantidad*this.precio;
     }
 
 }

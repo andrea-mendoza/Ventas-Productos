@@ -5,6 +5,9 @@ class Venta{
     }
 
     total(){
+        for(let i =0;i<this.productos.length;i++){
+            this.montoTotal = this.montoTotal + this.productos[i].calcularTarifa();
+        }
         return this.montoTotal;
     }
 
