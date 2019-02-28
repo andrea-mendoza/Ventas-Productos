@@ -3,6 +3,7 @@ var expect = require('chai').expect;
 var should = require('chai').should();
 
 import Servicio from '../servicio.js';
+import Producto from '../producto.js';
 
 describe('Servicio test', function() {
 
@@ -13,7 +14,7 @@ describe('Servicio test', function() {
     });
 
     it('La tarifa del servicio es igual a 0',function(){
-        expect(thisService.calcularTarifa()).equal(0);
+        expect(thisService.calcularTarifa(0)).equal(0);
     });
 
 });

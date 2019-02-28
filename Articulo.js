@@ -4,5 +4,7 @@ class Articulo{
         this.saldo = saldo;
         this.precio = precio;
     }
+
+    
     
 }

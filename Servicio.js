@@ -8,7 +8,7 @@ class Servicio{
         return true;
     }
 
-    calcularTarifa(){
+    calcularTarifa(cant){
         return 0;
     }
 

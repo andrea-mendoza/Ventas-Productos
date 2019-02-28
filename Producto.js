@@ -1,8 +1,12 @@
 class Producto{
     constructor() {
-
     }
 
+    estaDisponible(cantidad){
+    }
+
+    calcularTarifa(cant){
+    }
 
 
 };
