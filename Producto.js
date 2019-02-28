@@ -1,7 +1,5 @@
 class Producto{
-    constructor() {
-    }
-
+    
     estaDisponible(cantidad){
     }
 

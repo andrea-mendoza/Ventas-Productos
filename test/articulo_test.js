@@ -6,7 +6,13 @@ import Articulo from '../articulo.js';
 
 describe('Articulo test', function() {
 
-    it('Primer Test',function(){
-        expect(true).equal(true);
+    let thisArticle = new Articulo ("Modem",30,250);
+
+    it('Cuando el servicio este disponible devuelve true',function(){
+        expect(thisArticle.estaDisponible(3)).equal(true);
+    });
+
+    it('La tarifa del servicio es igual a 0',function(){
+        expect(thisArticle.calcularTarifa(0)).equal(0);
     });
 });
