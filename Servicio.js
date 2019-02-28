@@ -7,10 +7,6 @@ class Servicio extends Producto{
         this.precio = precio;
     }
 
-    estaDisponible(cantidad){
-        return true;
-    }
-
     calcularTarifa(cant){
         return cant*this.precio;
     }

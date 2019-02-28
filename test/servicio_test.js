@@ -8,10 +8,6 @@ describe('Servicio test', function() {
 
     let thisService = new Servicio("VPN", 13);
 
-    it('Cuando el servicio este disponible devuelve true',function(){
-        expect(thisService.estaDisponible(3)).equal(true);
-    });
-
     it('Si no se requiere ningun servicio de VPN la tarifa debe ser 0',function(){
         expect(thisService.calcularTarifa(0)).equal(0);
     });

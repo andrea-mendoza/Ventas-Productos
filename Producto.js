@@ -1,11 +1,7 @@
 class Producto{
-    
-    estaDisponible(cantidad){
-    }
 
     calcularTarifa(cant){
     }
-
 
 };
 
