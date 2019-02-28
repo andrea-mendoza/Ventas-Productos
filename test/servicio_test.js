@@ -3,7 +3,6 @@ var expect = require('chai').expect;
 var should = require('chai').should();
 
 import Servicio from '../servicio.js';
-import Producto from '../producto.js';
 
 describe('Servicio test', function() {
 
@@ -13,8 +12,13 @@ describe('Servicio test', function() {
         expect(thisService.estaDisponible(3)).equal(true);
     });
 
-    it('La tarifa del servicio es igual a 0',function(){
+    it('Si no se requiere ningun servicio de VPN la tarifa debe ser 0',function(){
         expect(thisService.calcularTarifa(0)).equal(0);
     });
+
+    it('Si se quiere 2 servicios de VPN la tarifa debe ser 26',function(){
+        expect(thisService.calcularTarifa(2)).equal(26);
+    });
+
 
 });

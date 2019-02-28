@@ -12,7 +12,7 @@ class Servicio extends Producto{
     }
 
     calcularTarifa(cant){
-        return 0;
+        return cant*this.precio;
     }
 
 }

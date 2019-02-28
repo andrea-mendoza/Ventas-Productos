@@ -14,7 +14,10 @@ class Articulo extends Producto{
     }
 
     calcularTarifa(cant){
-        return 0;
+        if(cant === 0)
+            return 0;
+        else
+            return cant*this.precio+this.saldo;
     }
 }
 
