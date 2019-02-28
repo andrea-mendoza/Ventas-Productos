@@ -8,10 +8,6 @@ class Articulo extends Producto{
         this.saldo = saldo;
         this.precio = precio;
     }
-    estaDisponible(cantidad)
-    {
-        return true;
-    }
 
     calcularTarifa(cant){
         if(cant === 0)
