@@ -1,6 +1,6 @@
 class Producto{
 
-    calcularTarifa(cant){
+    calcularTarifa(){
     }
 
 };

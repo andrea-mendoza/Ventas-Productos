@@ -3,17 +3,16 @@ var expect = require('chai').expect;
 var should = require('chai').should();
 
 import Articulo from '../articulo.js';
-import Producto from '../producto.js';
 
 describe('Articulo test', function() {
 
-    let thisArticle = new Articulo ("Modem",30,250);
-
-    it('La tarifa de ningun articulo Modem es igual a 0',function(){
-        expect(thisArticle.calcularTarifa(0)).equal(0);
+    it('La tarifa de ningun articulo es igual a 0',function(){
+        let thisArticle = new Articulo (0,30,250);
+        expect(thisArticle.calcularTarifa()).equal(0);
     });
 
-    it('La tarifa de 3 articulos Modem es igual a 780',function(){
-        expect(thisArticle.calcularTarifa(3)).equal(780);
+    it('La tarifa de 3 articulos es igual a 780',function(){
+        let thisArticle = new Articulo (3,30,250);
+        expect(thisArticle.calcularTarifa()).equal(780);
     });
 });

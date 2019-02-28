@@ -5,7 +5,11 @@ class Venta{
     }
 
     total(){
-        return 0;
+        return this.montoTotal;
+    }
+
+    agregarProducto(producto){
+        this.productos.push(producto);
     }
 }
 

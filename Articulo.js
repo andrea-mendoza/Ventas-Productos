@@ -1,19 +1,19 @@
 import Producto from '../Poliformismo/producto.js';
 
 class Articulo extends Producto{
-    constructor(nombre,saldo,precio)
+    constructor(cantidad,saldo,precio)
     {
         super();
-        this.nombre = nombre;
+        this.cantidad = cantidad;
         this.saldo = saldo;
         this.precio = precio;
     }
 
-    calcularTarifa(cant){
-        if(cant === 0)
+    calcularTarifa(){
+        if(this.cantidad === 0)
             return 0;
         else
-            return cant*this.precio+this.saldo;
+            return this.cantidad*this.precio+this.saldo;
     }
 }
 
